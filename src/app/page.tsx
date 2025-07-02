@@ -1,7 +1,5 @@
 "use client";
-import { useState } from "react";
-import { db } from "../firebaseClient";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+
 import CVUploader from "./components/CVUploader";
 
 export default function Home() {

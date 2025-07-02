@@ -88,7 +88,7 @@ export default function CVUploader() {
       });
       setSuccess(true);
       setForm({ name: "", email: "", summary: "", experiences: [{ jobTitle: "", company: "", startYear: "", endYear: "", description: "" } as Experience], education: [{ university: "", degree: "", startYear: "", endYear: "" } as Education] });
-    } catch (err) {
+    } catch {
       setError("Failed to upload CV. Please try again.");
     } finally {
       setLoading(false);
